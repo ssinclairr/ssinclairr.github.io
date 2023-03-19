@@ -1,0 +1,65 @@
+
+h1 {
+    font-size: 50px;
+}
+h2{
+    font-size: 36px;
+
+
+
+
+}
+h1, h2 { 
+    text-align: center;
+    color: whitesmoke;
+    
+
+}
+
+h3, p { 
+    text-align: center;
+    color:black
+    
+}
+
+body {
+padding: 50px;
+background-color: skyblue;
+
+}
+
+
+
+
+.section-box { 
+    max-width: 80%;
+    background-color: whitesmoke;
+    display:block;
+    border-radius: 30px;
+    border-style: groove;
+    border-color: grey;
+    border-width: 5px;
+    padding: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    margin: 0 auto;
+    
+
+}
+img {
+    max-width: 80%;
+    padding: 25px;
+    margin: 0, auto;
+}
+
+.center {
+    display: block;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+
+

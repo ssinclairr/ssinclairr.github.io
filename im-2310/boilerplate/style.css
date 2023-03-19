@@ -1,0 +1,17 @@
+h1 { 
+    margin-left: 10%;
+    color: whitesmoke;
+}
+
+h2, h3, p { 
+    text-align: center;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    
+}
+
+body {
+padding: 50px;
+background-image: radial-gradient(purple,palevioletred);
+}
+
