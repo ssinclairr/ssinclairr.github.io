@@ -10,8 +10,14 @@
 --col04: #34834b;
 --col05:purple;
 --border:1px solid var(--col05);
-
 }
+/* This particular colour palette was chosen as the reference image given DIALEKTIK - 
+Koln Studio, reminded me of one of my favourite films, The Joker (2019). The excessively 
+large heading is similar to that of the abrupt, confronting title sequence of The Joker,
+as it is presented in a large, bold and yellow font. To link this, I utilised some major 
+colours generally used for the palette of the Joker to style the site. The box representing 
+the title of the site is consistent in colour with the Joker sequence, and the body is 
+filled with varying other colours associated with the character. */
 
 body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
