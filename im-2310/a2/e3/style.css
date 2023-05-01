@@ -23,6 +23,8 @@
   scroll-behavior: smooth;
 }
 
+/* transition: was added for a 1 second, smooth transition for when the dark mode/light mode button is clicked. */
+
 body{
   padding: 1rem;
   background-color: var(--col-02);
@@ -31,6 +33,8 @@ body{
 
 }
 
+/* hover was added for all <a> links to change the colour of the link when hovered over, 
+to inform the user that this is a clickable link and not just an underlined, coloured word. */
 
 a:hover {
 color: var(--col-06)
@@ -44,6 +48,10 @@ nav {
 nav li{
   font-size: 1rem;
 }
+
+/* here a pointer cursor and underline was added to the menu item list, 
+when hovered over, to indicate to the user that these are clickable items and not a stagnant list. */
+
 nav ol li a:hover{
   cursor: pointer;
   text-decoration: underline;
@@ -111,9 +119,13 @@ li ul{
   /* note the use of position: sticky to keep the button on the page even with scrolling */
   position: sticky;
   top: 1rem;
+  /* a transition was added to the button to also make a clean 1 second transition*/
   transition: 1000ms;
-  
 }
+
+/* here a hover element is added to add a cursor and a background colour to the button,, 
+informing the user that this is a clickable element of the page. */
+
 #mode-button:hover{
   background-color: var(--col-03);
   color: var(--col-02);
@@ -132,6 +144,7 @@ li ul{
   justify-content: center;
 }
 /* changing button to look like a link */
+
 #load-link{
   line-height: 1rem;
   background-color: transparent;
@@ -139,11 +152,20 @@ li ul{
   cursor: pointer;
   
 }
+
+/* a hover selector is used to inform the user that there is a button 
+available when hovering over the text, by utilising the background colour change. */
+
 #load-link:hover {
  background-color: var(--col-05);
  border-radius: 10px;
-  
+}
 
+/* here an active selector is used to inform the user that the button they are clicking, is in fact being clicked. */
+
+#load-link:active{
+  background-color: var(--col-03);
+  color: var(--col-02);
 }
 /* throbber while page is fake loading */
 #load-throbber{
@@ -154,19 +176,15 @@ li ul{
   background-color: var(--col-03);
   /* we also initially set display to none so it only shows once the link is clicked */
   display: none;
+  /* the load-throbber now has been set with an animation to run for 10 seconds. */
   animation-name: loader;
   animation-duration: 10000ms;
   align-items: start;
 
 }
 
-#load-throbber:active{
-display: flex;
-flex-flow: column nowrap;
-align-items: start;
-justify-content: center;
-}
-
+/* the animation will increase the load-throbber's width by 8% every 2.5 seconds for 10 seconds. 
+This loading bar is intended to give the effect of the title being underlined, whilst the page is also in process of loading. */
 
  @keyframes loader {
   0% { width: 0%;}
