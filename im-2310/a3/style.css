@@ -1,0 +1,181 @@
+
+:root{
+    --col-01:rgb(255, 255, 255);
+    --col-02:green;
+    --col-03:red;
+    --col-04:rgb(229, 229, 229);
+    --col-05:black;
+    --border:1px solid var(--col-05);
+}
+
+
+
+body {
+    background-color: var(--col-01);
+    color: var(--col-05);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+    
+}
+
+p{
+    text-align: left;
+    padding: 10px;
+}
+
+h1{
+    text-align: center;
+    color: var(--col-05);
+    
+}
+
+
+
+
+.flex-container{
+    
+    border: var(--border);
+    background-color: var(--col-04);
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    width: 90%;
+    margin-left: 5%;
+
+}
+
+.flex-container div{
+background-color: rgb(255, 255, 255);
+border: var(--border);
+width: 40%;
+margin: 4%;
+padding-bottom: 10px;}
+
+
+h1{
+    font-size: 50px;
+
+}
+
+header{
+background-color: var(--col-04);
+text-align: center;
+padding: 2%;
+}
+    
+
+
+img {
+width: auto;
+height: 200px;
+padding:10px;
+background-color: lightgrey;
+border: var(--border);
+}
+
+
+
+.product1{
+    
+    text-align: center;
+    
+    
+}
+.button1{
+    cursor:not-allowed;
+    
+}
+
+.button1:hover{
+    display: none;
+}
+
+.product2{
+  
+    text-align: center;
+}
+
+.button2{
+    cursor:col-resize
+}
+
+.button2:active{
+    transform: scale(1000%);
+}
+
+.product3{
+    
+    text-align: center;
+}
+.button3{
+    cursor:crosshair;
+}
+.button3:hover{
+    transform: 10%;
+    transform: translateX(-100%);
+}
+.button3:active{
+    transform: translate(100%);
+}
+
+.product4{
+    
+    text-align: center;
+}
+
+.product5{
+    
+    text-align: center;
+}
+.product6:hover{
+    transition: 0.4s;
+    opacity: 0%;
+    
+}
+.product6{
+    text-align: center;
+}
+
+.button1, .button2, .button3, .button4, .button5, .butoon6{
+    background-color: var(--col-04);
+    border: var(--border);
+}
+
+
+
+.button4:hover{
+    transition: 2s;
+    transform: translatey(1000%);
+    cursor:grab;
+}
+.button5 {
+    cursor:grab;
+}
+.button5:hover{
+background-color: lightblue;
+
+}
+.button5:active{
+    background-color: blue;
+    color: whitesmoke;
+    cursor: progress;
+}
+
+.cart{
+    margin-left: 80%;
+    padding: 20px;
+    height: 100px;
+    width: auto;
+}
+
+
+button{
+    scale: 110%;
+    border-radius: 30px;
+}
+
+
+
+
+
+
