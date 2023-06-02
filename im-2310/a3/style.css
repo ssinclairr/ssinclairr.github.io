@@ -1,18 +1,16 @@
-
+/* The root file including the colour palette and border */
 :root{
     --col-01:rgb(255, 255, 255);
-    --col-02:green;
-    --col-03:red;
-    --col-04:rgb(229, 229, 229);
-    --col-05:black;
-    --border:1px solid var(--col-05);
+    --col-02:rgb(229, 229, 229);
+    --col-03:black;
+    --border:1px solid var(--col-03);
 }
 
 
 
 body {
     background-color: var(--col-01);
-    color: var(--col-05);
+    color: var(--col-03);
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     
     
@@ -25,17 +23,17 @@ p{
 
 h1{
     text-align: center;
-    color: var(--col-05);
+    color: var(--col-03);
     
 }
 
 
 
-
+/* Here the flex container for the product section */
 .flex-container{
     
     border: var(--border);
-    background-color: var(--col-04);
+    background-color: var(--col-02);
     display:flex;
     flex-direction: row;
     flex-wrap:wrap;
@@ -45,7 +43,7 @@ h1{
 }
 
 .flex-container div{
-background-color: rgb(255, 255, 255);
+background-color: var(--col-01);
 border: var(--border);
 width: 40%;
 margin: 4%;
@@ -58,18 +56,24 @@ h1{
 }
 
 header{
-background-color: var(--col-04);
+background-color: var(--col-02);
 text-align: center;
 padding: 2%;
 }
     
+.header-image{
+    height: 140px;
+    width: auto;
+}
+
+
 
 
 img {
 width: auto;
 height: 200px;
 padding:10px;
-background-color: lightgrey;
+background-color: var(--col-02);
 border: var(--border);
 }
 
@@ -85,7 +89,7 @@ border: var(--border);
     cursor:not-allowed;
     
 }
-
+/* the first disappearing animation*/
 .button1:hover{
     display: none;
 }
@@ -98,7 +102,7 @@ border: var(--border);
 .button2{
     cursor:col-resize
 }
-
+/* the second aniamtion, scaling the button up on click*/
 .button2:active{
     transform: scale(1000%);
 }
@@ -110,6 +114,8 @@ border: var(--border);
 .button3{
     cursor:crosshair;
 }
+
+/* animation 3, running away from the user's cursor */
 .button3:hover{
     transform: 10%;
     transform: translateX(-100%);
@@ -122,11 +128,32 @@ border: var(--border);
     
     text-align: center;
 }
+/* animation4 , dropping the button away from the user*/
+.button4:hover{
+    transition: 2s;
+    transform: translatey(1000%);
+    cursor:grab;
+}
 
 .product5{
     
     text-align: center;
 }
+.button5 {
+    cursor:grab;
+}
+/* animation 5, faking a load time */
+
+.button5:hover{
+background-color: lightblue;
+
+}
+.button5:active{
+    background-color: blue;
+    color: var(--col-01);
+    cursor: progress;
+}
+/* animation 6, making the product disappear*/
 .product6:hover{
     transition: 0.4s;
     opacity: 0%;
@@ -137,35 +164,8 @@ border: var(--border);
 }
 
 .button1, .button2, .button3, .button4, .button5, .butoon6{
-    background-color: var(--col-04);
+    background-color: var(--col-02);
     border: var(--border);
-}
-
-
-
-.button4:hover{
-    transition: 2s;
-    transform: translatey(1000%);
-    cursor:grab;
-}
-.button5 {
-    cursor:grab;
-}
-.button5:hover{
-background-color: lightblue;
-
-}
-.button5:active{
-    background-color: blue;
-    color: whitesmoke;
-    cursor: progress;
-}
-
-.cart{
-    margin-left: 80%;
-    padding: 20px;
-    height: 100px;
-    width: auto;
 }
 
 
